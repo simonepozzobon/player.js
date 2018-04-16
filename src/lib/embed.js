@@ -184,6 +184,7 @@ export function resizeEmbeds(parent = document) {
             const space = iframes[i].parentElement;
 
             if (space && space.className.indexOf('vimeo-space') !== -1) {
+              console.log('siamo qui', space);
                 // space.style.paddingBottom = `${event.data.data[0].bottom}px`;
             }
 

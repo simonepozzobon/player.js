@@ -983,6 +983,7 @@ function resizeEmbeds() {
             var space = iframes[i].parentElement;
 
             if (space && space.className.indexOf('vimeo-space') !== -1) {
+                console.log('siamo qui', space);
                 // space.style.paddingBottom = `${event.data.data[0].bottom}px`;
             }
 
@@ -1001,12 +1002,6 @@ function resizeEmbeds() {
  * @module lib/postmessage
  */
 
-/**
- * Parse a message received from postMessage.
- *
- * @param {*} data The data received from postMessage.
- * @return {object}
- */
 function parseMessageData(data) {
     if (typeof data === 'string') {
         data = JSON.parse(data);
@@ -1119,6 +1114,7 @@ var Player = function () {
         _classCallCheck(this, Player);
 
         /* global jQuery */
+        console.log('modificat');
         if (window.jQuery && element instanceof jQuery) {
             if (element.length > 1 && window.console && console.warn) {
                 console.warn('A jQuery object with multiple elements was passed, using the first element.');
