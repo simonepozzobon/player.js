@@ -2094,6 +2094,7 @@ var Player = function () {
 }();
 
 if (!isNode) {
+    console.log('djfkdjfksk');
     initializeEmbeds();
     resizeEmbeds();
 }

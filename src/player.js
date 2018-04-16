@@ -877,6 +877,7 @@ class Player {
 }
 
 if (!isNode) {
+    console.log('djfkdjfksk')
     initializeEmbeds();
     resizeEmbeds();
 }
