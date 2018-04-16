@@ -876,8 +876,7 @@ class Player {
     }
 }
 
-if (!isNode) {
-    console.log('djfkdjfksk')
+if (!isNode && !window.Vimeo.Player) {
     initializeEmbeds();
     resizeEmbeds();
 }

@@ -176,6 +176,8 @@ export function resizeEmbeds(parent = document) {
 
         const iframes = parent.querySelectorAll('iframe');
 
+        console.log('diasadad', iframes)
+
         for (let i = 0; i < iframes.length; i++) {
             if (iframes[i].contentWindow !== event.source) {
                 continue;

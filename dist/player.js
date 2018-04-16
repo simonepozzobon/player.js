@@ -975,6 +975,8 @@ function resizeEmbeds() {
 
         var iframes = parent.querySelectorAll('iframe');
 
+        console.log('diasadad', iframes);
+
         for (var i = 0; i < iframes.length; i++) {
             if (iframes[i].contentWindow !== event.source) {
                 continue;
@@ -2099,8 +2101,7 @@ var Player = function () {
     return Player;
 }();
 
-if (!isNode) {
-    console.log('djfkdjfksk');
+if (!isNode && !window.Vimeo.Player) {
     initializeEmbeds();
     resizeEmbeds();
 }
