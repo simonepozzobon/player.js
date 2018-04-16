@@ -2101,7 +2101,7 @@ var Player = function () {
     return Player;
 }();
 
-if (!isNode && !window.Vimeo.Player) {
+if (!isNode) {
     initializeEmbeds();
     resizeEmbeds();
 }
